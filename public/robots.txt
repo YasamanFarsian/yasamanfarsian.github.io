@@ -1,11 +1,10 @@
 # robots.txt for https://niladri1.vercel.app/
 # Optimized for maximum SEO crawling
 
-# Allow all search engines to crawl everything
+# Allow all search engines
 User-agent: *
 Allow: /
 
-# Specifically allow important crawlers
 User-agent: Googlebot
 Allow: /
 
@@ -24,19 +23,17 @@ Allow: /
 User-agent: Baiduspider
 Allow: /
 
-# Disallow crawling of certain file types and directories
-Disallow: /*.json$
-Disallow: /*.xml$
+# Block irrelevant server paths
 Disallow: /api/
 Disallow: /_next/
 Disallow: /node_modules/
 
-# Allow crawling of PDF files (CV, certificates, etc.)
-Allow: /files/*.pdf$
+# Explicitly allow important public files
+Allow: /sitemap.xml
+Allow: /manifest.json
+Allow: /og-image.png
+Allow: /favicon.ico
 Allow: /*.pdf$
 
-# Sitemap location
+# Sitemap
 Sitemap: https://niladri1.vercel.app/sitemap.xml
-
-# Crawl delay to be respectful (optional, can be removed for faster crawling)
-# Crawl-delay: 1

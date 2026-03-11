@@ -1,62 +1,124 @@
 <div align="center">
 
-  # Niladri Chatterjee's Portfolio 🚀
+# Niladri Chatterjee — Portfolio 🚀
 
-  [![Website](https://img.shields.io/website?label=Portfolio&style=for-the-badge&url=https%3A%2F%2Fniladri1.vercel.app)](https://niladri1.vercel.app)
-  [![GitHub followers](https://img.shields.io/github/followers/niladri-1?logo=github&style=for-the-badge)](https://github.com/niladri-1)
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/niladri1)
-  [![Vercel](https://img.shields.io/badge/Vercel-Deployed-black?style=for-the-badge&logo=vercel)](https://niladri1.vercel.app)
-  [![Next.js](https://img.shields.io/badge/Built%20with-Next.js-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
+[![Website](https://img.shields.io/website?label=Live%20Portfolio&style=for-the-badge&url=https%3A%2F%2Fniladri1.vercel.app)](https://niladri1.vercel.app)
+[![GitHub followers](https://img.shields.io/github/followers/niladri-1?logo=github&style=for-the-badge)](https://github.com/niladri-1)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-4000%2B%20Followers-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/niladri1)
+[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://niladri1.vercel.app)
 
-  <p align="center">
-    <img src="https://skillicons.dev/icons?i=react,nextjs,typescript,tailwind" alt="Tech Stack" />
-  </p>
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=react,vite,typescript,tailwind,nodejs,mongodb,express,git" alt="Tech Stack Icons" />
+</p>
 
-  <h3>Full Stack Developer | MERN Specialist | Database Expert</h3>
+<h3>Full Stack Developer · MERN Stack Specialist · Kolkata, India</h3>
 
-  [View Live Demo](https://niladri1.vercel.app) · [Report Bug](https://github.com/niladri-1/Software-Dev-Portfolio/issues) · [Request Feature](https://github.com/niladri-1/Software-Dev-Portfolio/issues)
+[🌐 View Live](https://niladri1.vercel.app) · [🐛 Report Bug](https://github.com/niladri-1/Software-Dev-Portfolio/issues) · [✨ Request Feature](https://github.com/niladri-1/Software-Dev-Portfolio/issues)
+
+<br/>
+
+<img src="https://niladri1.vercel.app/og-image.png" alt="Niladri Chatterjee Portfolio Preview" width="80%" style="border-radius: 12px;" />
 
 </div>
 
+---
+
 ## 🌟 Overview
 
-A modern, responsive portfolio website showcasing my journey as a Full Stack Developer. Built with Next.js and Tailwind CSS, this portfolio demonstrates my expertise in web development through interactive UI components and seamless user experience.
+A modern, fully responsive personal portfolio built with **React 18 + Vite 5** and **Tailwind CSS**, featuring smooth animations, a real-time GitHub integration, smart search, and complete SEO optimization. Designed to showcase my skills, projects, and experience as a Full Stack Developer.
 
-## ✨ Key Features
+---
+
+## ✨ Features
 
 <div align="center">
 
 | Feature | Description |
-|---------|------------|
-| 🎨 Modern Design | Sleek dark theme with beautiful gradients |
-| 📱 Responsive | Optimized for all devices |
-| ⚡ Fast Performance | Optimized loading and rendering |
-| 🔍 Smart Search | Real-time search across portfolio |
-| 🎭 Animations | Smooth transitions with Framer Motion |
-| 📊 Analytics | Built-in performance monitoring |
-| 🔒 Security Headers | Enhanced security configurations |
-| 🤖 SEO Optimized | Search engine friendly structure |
+|---------|-------------|
+| 🎨 Dark Theme | Sleek dark UI with subtle 3D background and gradient accents |
+| 📱 Fully Responsive | Optimized for mobile, tablet and desktop |
+| ⚡ Vite Powered | Lightning-fast HMR development and optimized production builds |
+| 🔍 Smart Search | Real-time search across all portfolio sections |
+| 🎭 Framer Motion | Smooth scroll animations and page transitions |
+| 🐙 GitHub Live Data | Real-time repo count fetched from GitHub API via SWR |
+| 🤖 SEO Optimized | Per-page meta tags, OG image, JSON-LD structured data, sitemap |
+| 📲 PWA Ready | Installable on mobile with full manifest and favicon set |
 
 </div>
+
+---
 
 ## 🚀 Tech Stack
 
 <div align="center">
 
-| Frontend | Backend | Database | Tools |
-|----------|---------|----------|-------|
-| Next.js | Node.js | MongoDB | VS Code |
-| React | Express | MySQL | Git |
-| TypeScript | REST API | NoSQL | Vercel |
-| Tailwind CSS | WebSocket | Redis | Docker |
+| Category | Technologies |
+|----------|-------------|
+| **Frontend** | React 18, Vite 5, Tailwind CSS 3, Framer Motion 11 |
+| **Routing** | React Router DOM 6 |
+| **Data Fetching** | SWR (GitHub API) |
+| **Icons** | Lucide React |
+| **Backend/DB** | Node.js, Express.js, MongoDB, MySQL |
+| **Auth** | JWT |
+| **Cloud** | AWS, Render, Vercel |
+| **Tools** | Git, GitHub, Postman, VS Code |
 
 </div>
+
+---
+
+## 📁 Project Structure
+
+```
+├── public/
+│   ├── favicon.ico
+│   ├── favicon-16x16.png
+│   ├── favicon-32x32.png
+│   ├── favicon-192.png
+│   ├── favicon-512.png
+│   ├── apple-touch-icon.png
+│   ├── og-image.png
+│   ├── manifest.json
+│   ├── robots.txt
+│   └── sitemap.xml
+└── src/
+    ├── assets/
+    ├── components/
+    │   ├── Background3D.jsx
+    │   ├── Footer.jsx
+    │   ├── Loading.jsx
+    │   ├── Navbar.jsx
+    │   ├── ScrollAnimation.jsx
+    │   ├── SearchDialog.jsx
+    │   └── TechLogos.jsx
+    ├── pages/
+    │   ├── Home.jsx
+    │   ├── About.jsx
+    │   ├── Projects.jsx
+    │   ├── Skills.jsx
+    │   ├── Experience.jsx
+    │   ├── Education.jsx
+    │   ├── Certificates.jsx
+    │   ├── Contact.jsx
+    │   ├── Kali.jsx
+    │   └── NotFound.jsx
+    ├── config/
+    │   └── contact.js
+    ├── App.jsx
+    ├── main.jsx
+    └── index.css
+```
+
+---
 
 ## 🛠️ Quick Start
 
 ```bash
 # Clone the repository
-git clone https://github.com/niladri-1/Software-Dev-Portfolio.git
+git clone https://github.com/niladri-1/niladri-1/Personal-portfolio
+
+# Navigate to project
+cd Personal-portfolio
 
 # Install dependencies
 npm install
@@ -66,68 +128,81 @@ npm run dev
 
 # Build for production
 npm run build
+
+# Preview production build
+npm run preview
 ```
 
-## 📱 Mobile Features
+---
 
-- 📱 Responsive navigation
-- 🔍 Mobile-optimized search
-- 👆 Touch-friendly interactions
-- 🖼️ Optimized images
-- 📊 Mobile performance metrics
-
-## 🎯 Core Sections
+## 🎯 Portfolio Sections
 
 <div align="center">
 
 | Section | Description |
-|---------|------------|
-| 🏠 Home | Welcome and introduction |
-| 👨‍💻 About | Professional background |
-| 📂 Projects | Development portfolio |
-| 💼 Experience | Work history |
-| 🎓 Education | Academic background |
+|---------|-------------|
+| 🏠 Home | Introduction, live GitHub stats, social links |
+| 👨‍💻 About | Background, achievements, areas of interest |
+| 📂 Projects | Full stack projects with tech stack details |
+| 💼 Experience | Internships and professional work history |
+| 🎓 Education | B.Tech Computer Science — 8.48 CGPA |
+| 🛠️ Skills | Categorized technical skills with icons |
 | 🏆 Certificates | Professional certifications |
-| 📞 Contact | Get in touch |
+| 📞 Contact | Email, WhatsApp, LinkedIn, GitHub |
 
 </div>
 
-## 🔍 SEO Keywords
+---
 
-<div align="center">
+## 🔍 SEO
 
-`Niladri Chatterjee` · `Niladri1` · `Software Developer` · `Full Stack Developer` · `MERN Stack` · `Web Developer` · `React Developer` · `Next.js Expert` · `Database Developer` · `Frontend Specialist` · `Backend Developer` · `JavaScript Expert` · `TypeScript Developer` · `Node.js Developer` · `MongoDB Expert` · `SQL Developer`
+This portfolio is fully SEO-optimized:
 
-</div>
+- ✅ Per-page dynamic `<title>` and `<meta description>` via `SEOUpdater` component
+- ✅ Open Graph + Twitter Card tags for rich link previews
+- ✅ JSON-LD structured data (`Person` schema)
+- ✅ XML sitemap with all pages
+- ✅ `robots.txt` correctly configured
+- ✅ PWA manifest with correct icons
+- ✅ Google Search Console verified
+- ✅ Custom `og-image.png` (1200×630) for social sharing
+- ✅ Full favicon set (16, 32, 192, 512, ICO, Apple Touch)
 
-## 📞 Let's Connect
+---
+
+## 📞 Connect with Me
 
 <div align="center">
 
 [![Email](https://img.shields.io/badge/Email-code.niladri%40gmail.com-red?style=for-the-badge&logo=gmail)](mailto:code.niladri@gmail.com)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-niladri1-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/niladri1)
-[![GitHub](https://img.shields.io/badge/GitHub-niladri--1-black?style=for-the-badge&logo=github)](https://github.com/niladri-1)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-Connect-green?style=for-the-badge&logo=whatsapp)](https://wa.me/+916296554939)
+[![Portfolio](https://img.shields.io/badge/Portfolio-niladri1.vercel.app-orange?style=for-the-badge&logo=vercel)](https://niladri1.vercel.app)
 
 </div>
+
+---
 
 ## 📈 GitHub Stats
 
 <div align="center">
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=niladri-1&theme=dark)](https://github.com/niladri-1)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=niladri-1&theme=dark&hide_border=true)](https://github.com/niladri-1)
+
+[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=niladri-1&layout=compact&theme=dark&hide_border=true)](https://github.com/niladri-1)
 
 </div>
+
+---
 
 ## 📄 License
 
 <div align="center">
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
-[![Visitors](https://api.visitorbadge.io/api/visitors?path=niladri-1%2Fportfolio&label=Visitors&labelColor=%23000000&countColor=%2337d67a)](https://visitorbadge.io/status?path=niladri-1%2Fportfolio)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=niladri-1%2FSoftware-Dev-Portfolio&label=Visitors&labelColor=%23000000&countColor=%2322d3ee)](https://visitorbadge.io/status?path=niladri-1%2FSoftware-Dev-Portfolio)
 
-<h3>⭐ Star this repo if you like it!</h3>
+<h3>⭐ Star this repo if you found it helpful!</h3>
 
 </div>
