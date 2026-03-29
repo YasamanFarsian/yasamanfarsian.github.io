@@ -110,7 +110,7 @@ const Footer = () => {
             <h3 className="text-sm font-semibold text-white">Social</h3>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://github.com/YasamanFarsian/yasamanfarsian.github.io"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-white transition-colors"

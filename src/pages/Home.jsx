@@ -15,7 +15,6 @@ import Skills from "./Skills";
 
 const Home = () => {
   const [copied, setCopied] = useState(false);
-  const email = "yfarsiansani@gmail.com";
   const whatsappNumber = "+4796715675";
 
 
@@ -24,37 +23,20 @@ const Home = () => {
       icon: <Code2 className="w-6 h-6" />,
       title: "Frontend Development",
       description: "Explore scalable web applications built with React, TypeScript, and modern frontend technologies.",
+      link:'/projects'
     },
     {
       icon: <PencilRuler className="w-6 h-6" />,
       title: "UI/UX Design",
       description: "View user-centered designs and interactive prototypes created in Figma for real-world applications.",
+      link:'/portfolios'
     },
 
   ];
 
-  const copyToClipboard = async () => {
-    try {
-      await navigator.clipboard.writeText(email);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch (err) {
-      console.error("Failed to copy:", err);
-    }
-  };
-
-  const handleEmailClick = (e) => {
-    if (window.innerWidth <= 640) {
-      window.location.href = `mailto:${email}`;
-      e.preventDefault();
-    } else {
-      copyToClipboard();
-    }
-  };
-
   return (
     <div className="min-h-screen mt-5 pt-20 px-4 max-w-7xl mx-auto">
-      <div className="grid md:grid-cols-[0.8fr_1.2fr] gap-8">
+      <div className="grid md:grid-cols-[0.7fr_1.2fr] gap-8">
         <ScrollAnimation>
           <div className="aspect-square overflow-hidden rounded-md max-w-lg">
             <img
@@ -104,7 +86,7 @@ const Home = () => {
 
             <div className="flex gap-6">
               <a
-                href=""
+                href="https://github.com/YasamanFarsian/yasamanfarsian.github.io"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex flex-col items-center group w-12"
@@ -116,7 +98,7 @@ const Home = () => {
               </a>
 
               <a
-                href=""
+                href="https://www.linkedin.com/in/yasaman-farsian-548b93167/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex flex-col items-center group w-12"
@@ -153,6 +135,7 @@ const Home = () => {
             </h2>
             <div className="grid md:grid-cols-2 gap-6 mt-16">
               {achievements.map((achievement) => (
+                <a href={achievement.link}>
 
                 <div className="bg-white/5 p-6 py-6 rounded-xl backdrop-blur-sm text-center flex flex-col items-center justify-center min-h-40">
 
@@ -172,6 +155,7 @@ const Home = () => {
                   </p>
 
                 </div>
+                </a>
 
               ))}
             </div>
