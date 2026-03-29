@@ -2,21 +2,18 @@ import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { Code2, Menu, X } from 'lucide-react'
-import SearchDialog from './SearchDialog'
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const location = useLocation()
 
   const navLinks = [
-    { path: '/', label: 'Home' },
-    { path: '/about', label: 'About' },
     { path: '/education', label: 'Education' },
-    { path: '/experience', label: 'Experience' },
-    { path: '/skills', label: 'Skills' },
+    { path: '/experience', label: 'Work Experience' },
     { path: '/projects', label: 'Projects' },
+    { path: '/portfolios', label: 'UI/UX Portfolios' },
     { path: '/certificates', label: 'Certificates' },
-    { path: '/contact', label: 'Contact' },
   ]
 
   return (
@@ -31,15 +28,12 @@ const Navbar = () => {
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
-            {/* Logo */}
             <Link to="/" className="flex items-center space-x-3">
               <Code2 className="w-8 h-8 text-white" aria-hidden="true" />
-              <span className="text-xl font-bold text-white">Niladri</span>
+              <span className="text-xl font-bold text-white">Yasaman Farsian</span>
             </Link>
-
-            {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-6">
-              <SearchDialog />
+
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
@@ -50,11 +44,11 @@ const Navbar = () => {
                   {link.label}
                 </Link>
               ))}
+           
             </div>
 
-            {/* Mobile header right section */}
             <div className="flex md:hidden items-center space-x-2">
-              <SearchDialog />
+             
               <button
                 className="p-2 text-gray-400 hover:text-white transition-colors"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -84,11 +78,10 @@ const Navbar = () => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`block px-3 py-2 text-gray-400 hover:text-white transition-colors ${
-                    location.pathname === link.path
+                  className={`block px-3 py-2 text-gray-400 hover:text-white transition-colors ${location.pathname === link.path
                       ? 'bg-white/10 backdrop-blur-sm text-white'
                       : ''
-                  }`}
+                    }`}
                   onClick={() => setIsMenuOpen(false)}
                   aria-current={location.pathname === link.path ? 'page' : undefined}
                 >

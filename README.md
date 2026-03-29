@@ -1,67 +1,54 @@
 <div align="center">
 
-# Niladri Chatterjee — Portfolio 🚀
-
-[![Website](https://img.shields.io/website?label=Live%20Portfolio&style=for-the-badge&url=https%3A%2F%2Fniladri1.vercel.app)](https://niladri1.vercel.app)
-[![GitHub followers](https://img.shields.io/github/followers/niladri-1?logo=github&style=for-the-badge)](https://github.com/niladri-1)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-4000%2B%20Followers-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/niladri1)
-[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://niladri1.vercel.app)
-
+# Yasaman Farsian — Portfolio 🚀
 <p align="center">
   <img src="https://skillicons.dev/icons?i=react,vite,typescript,tailwind,nodejs,mongodb,express,git" alt="Tech Stack Icons" />
 </p>
 
-<h3>Full Stack Developer · MERN Stack Specialist · Kolkata, India</h3>
-
-[🌐 View Live](https://niladri1.vercel.app) · [🐛 Report Bug](https://github.com/niladri-1/Software-Dev-Portfolio/issues) · [✨ Request Feature](https://github.com/niladri-1/Software-Dev-Portfolio/issues)
-
-<br/>
-
-<img src="https://niladri1.vercel.app/og-image.png" alt="Niladri Chatterjee Portfolio Preview" width="80%" style="border-radius: 12px;" />
+<h3>Front-end Web Developer · Stavanger, Norway</h3>
 
 </div>
 
 ---
 
-## 🌟 Overview
+##  Overview
 
-A modern, fully responsive personal portfolio built with **React 18 + Vite 5** and **Tailwind CSS**, featuring smooth animations, a real-time GitHub integration, smart search, and complete SEO optimization. Designed to showcase my skills, projects, and experience as a Full Stack Developer.
+A modern, fully responsive personal portfolio built with React + Vite and Tailwind CSS, showcasing my work as a Frontend Engineer and UI/UX Designer. The portfolio highlights real-world projects, including cloud-based and real-time applications, along with selected UI/UX designs created in Figma. Designed with a focus on performance, usability, and clean, scalable architecture.
 
 ---
 
-## ✨ Features
+##  Features
 
 <div align="center">
 
 | Feature | Description |
 |---------|-------------|
-| 🎨 Dark Theme | Sleek dark UI with subtle 3D background and gradient accents |
-| 📱 Fully Responsive | Optimized for mobile, tablet and desktop |
-| ⚡ Vite Powered | Lightning-fast HMR development and optimized production builds |
-| 🔍 Smart Search | Real-time search across all portfolio sections |
-| 🎭 Framer Motion | Smooth scroll animations and page transitions |
-| 🐙 GitHub Live Data | Real-time repo count fetched from GitHub API via SWR |
-| 🤖 SEO Optimized | Per-page meta tags, OG image, JSON-LD structured data, sitemap |
-| 📲 PWA Ready | Installable on mobile with full manifest and favicon set |
+| 🎨 Modern UI/UX | Clean, user-centered design with a focus on usability and visual clarity |
+| 📱 Fully Responsive | Optimized for mobile, tablet, and desktop devices |
+| ⚡ High Performance | Built with Vite for fast development and optimized production builds |
+| ⚛️ React + TypeScript | Scalable frontend architecture using modern technologies |
+| 📊 Project Showcase | Highlights real-world projects including real-time, data-driven applications |
+| 🎨 UI/UX Portfolio | Includes design work and prototypes created in Figma |
+| 🎭 Smooth Animations | Subtle animations and transitions for enhanced user experience |
+| 🔗 Project & Design Links | Direct access to live projects and corresponding UI/UX designs |
+| 🤝 Clean Architecture | Maintainable and scalable code structure following best practices |
 
 </div>
 
 ---
 
-## 🚀 Tech Stack
+##  Tech Stack
 
 <div align="center">
 
-| Category | Technologies |
+| Technologies |
 |----------|-------------|
-| **Frontend** | React 18, Vite 5, Tailwind CSS 3, Framer Motion 11 |
-| **Routing** | React Router DOM 6 |
-| **Data Fetching** | SWR (GitHub API) |
-| **Icons** | Lucide React |
-| **Backend/DB** | Node.js, Express.js, MongoDB, MySQL |
-| **Auth** | JWT |
-| **Cloud** | AWS, Render, Vercel |
-| **Tools** | Git, GitHub, Postman, VS Code |
+| **Frontend** | React, TypeScript, Vite, Tailwind CSS |
+| **UI/UX Design** | Figma, Adobe XD |
+| **State & Data** | REST APIs, Axios |
+| **Testing** | Jest, Playwright |
+| **CI/CD & Cloud** | Azure DevOps (CI/CD), Cloud-based applications |
+| **Tools** | Git, GitHub, VS Code, Postman |
 
 </div>
 
@@ -84,7 +71,6 @@ A modern, fully responsive personal portfolio built with **React 18 + Vite 5** a
 └── src/
     ├── assets/
     ├── components/
-    │   ├── Background3D.jsx
     │   ├── Footer.jsx
     │   ├── Loading.jsx
     │   ├── Navbar.jsx
@@ -101,8 +87,6 @@ A modern, fully responsive personal portfolio built with **React 18 + Vite 5** a
     │   ├── Certificates.jsx
     │   ├── Contact.jsx
     │   └── NotFound.jsx
-    ├── config/
-    │   └── contact.js
     ├── App.jsx
     ├── main.jsx
     └── index.css

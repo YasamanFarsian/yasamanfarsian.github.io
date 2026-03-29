@@ -1,41 +1,38 @@
 import { motion } from 'framer-motion'
 import { GraduationCap, Calendar, MapPin, BookOpen, Award, FileText, ExternalLink } from 'lucide-react'
 import { ScrollAnimation } from '@/components/ScrollAnimation'
-import collegeImg from '@/assets/education/college_img.jpg'
-import schoolImg from '@/assets/education/school_img.jpg'
 import bTechPdf from '@/assets/files/education_pdf/B Tech.pdf'
-import hsMarkSheetPdf from '@/assets/files/education_pdf/HS MARK SHEET.pdf'
 
 const Education = () => {
   const educationData = [
     {
-      school: 'Bengal College of Engineering and Technology',
-      location: 'Durgapur, WB, India',
-      duration: 'July 2020 - June 2024',
-      degree: 'B.Tech (Computer Science and Engineering)',
-      grade: 'CGPA: 8.48 (80%)',
-      image: collegeImg,
+      university: 'University of Stavanger (UIS), Stavanger, Norway',
+      duration: '8-2021 - Paused',
+      degree: 'Master of Science, Computer Science, M.Sc.',
       resultUrl: bTechPdf,
-      coursework: ["Software Development", 'DSA', 'OOPs', 'DBMS', 'AI', 'ML', 'OS', 'Networking'],
       description:
-        'During my time at BCET, I have built a strong foundation in computer science, focusing on software development, problem-solving, and real-world applications. Engaging in hands-on projects, internships, and coding challenges has helped me enhance my technical and analytical skills.',
+        'paused to pursue professional career ',
     },
     {
-      school: 'Birsingha Bhagabati Vidyalaya (H.S)',
-      location: 'Medinipur, WB, India',
-      duration: 'June 2018 - July 2019',
-      degree: 'Higher Secondary (WBSC)',
-      grade: 'Percentage: 79%',
-      image: schoolImg,
-      resultUrl: hsMarkSheetPdf,
-      subjects: ['Physics', 'Chemistry', 'Mathematics', 'Biology', 'Computer Science'],
-      description:
-        'My higher secondary education laid the foundation for my technical journey, strengthening my analytical thinking and problem-solving abilities. The strong emphasis on mathematics and computer science has been instrumental in shaping my passion for software development.',
+      university: 'Azad University Tehran South (IAU), Iran',
+      duration: '09.2017 - 09-2020',
+      degree: 'Master of Science, Information Technology, M.Sc.',
+      grade: 'Graduated with honors, GPA 4.0 out of 5',
+      resultUrl: bTechPdf,
+
+    },
+    {
+      university: 'Azad University of Karaj (KIAU), Iran',
+      duration: '09.2011 - 09-2014',
+      degree: 'Bachelor of Science, Software Engineering, B.Sc.',
+      grade: 'Graduated with honors, GPA 4.0 out of 5',
+      resultUrl: bTechPdf,
+
     },
   ]
 
   return (
-    <div className="min-h-screen pt-20 px-4 max-w-6xl mx-auto pb-20">
+    <div className="min-h-screen pt-20 px-4 max-w-6xl mx-auto">
       <ScrollAnimation>
         <motion.div
           className="flex items-center gap-3 mb-12"
@@ -50,7 +47,7 @@ const Education = () => {
 
       <div className="space-y-12">
         {educationData.map((edu, index) => (
-          <ScrollAnimation key={edu.school}>
+          <ScrollAnimation key={edu.university}>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -62,75 +59,47 @@ const Education = () => {
                 <span className="text-gray-300">{edu.duration}</span>
               </div>
 
-              <div className="grid md:grid-cols-[350px,1fr]">
-                {/* Left Column - Image */}
-                <div className="relative h-96 md:h-full">
-                  <img
-                    src={edu.image}
-                    alt={edu.school}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end">
-                    <div className="p-6">
-                      <h3 className="text-xl font-bold mb-2">{edu.school}</h3>
-                      <div className="flex items-center gap-2 text-gray-300 mb-1">
-                        <MapPin className="w-4 h-4" />
-                        <span>{edu.location}</span>
-                      </div>
-                      <div className="flex items-center gap-2 text-gray-300">
-                        <Award className="w-4 h-4" />
-                        <span>{edu.grade}</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div className="grid md:grid-cols-[1fr]">
 
-                {/* Right Column - Content */}
+
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-4">
                     <BookOpen className="w-5 h-5 text-gray-400" />
-                    <h4 className="text-lg font-semibold">{edu.degree}</h4>
+                    <h4 className="text-xl font-semibold">{edu.degree}</h4>
                   </div>
 
-                  <div className="flex items-start gap-2 text-gray-300 mb-6">
-                    <FileText className="w-5 h-5 mt-1 flex-shrink-0" />
-                    <p className="text-sm leading-relaxed">{edu.description}</p>
+                  <div className="flex items-center gap-2 text-gray-300 mb-3">
+                    <MapPin className="w-4 h-4" />
+                    <span className="text- font-semibold">{edu.university}</span>
                   </div>
 
-                  {edu.coursework && (
-                    <div className="mb-6">
-                      <div className="flex flex-wrap gap-2">
-                        {edu.coursework.map((course) => (
-                          <span key={course} className="px-3 py-1 bg-white/10 rounded-full text-sm">
-                            {course}
-                          </span>
-                        ))}
-                      </div>
+                  {edu.grade && (
+                    <div className="flex items-center gap-2 text-gray-300">
+                      <Award className="w-4 h-4" />
+                      <span>{edu.grade}</span>
                     </div>
                   )}
 
-                  {edu.subjects && (
-                    <div className="mb-6">
-                      <div className="flex flex-wrap gap-2">
-                        {edu.subjects.map((subject) => (
-                          <span key={subject} className="px-3 py-1 bg-white/10 rounded-full text-sm">
-                            {subject}
-                          </span>
-                        ))}
-                      </div>
+
+                  {edu.description && (
+                    <div className="flex items-start gap-2 text-gray-300 mb-6">
+                      <FileText className="w-5 h-5 mt-1 flex-shrink-0" />
+                      <p className="text-sm leading-7">{edu.description}</p>
                     </div>
                   )}
 
-                  <motion.a
-                    href={edu.resultUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-2.5 bg-white/10 hover:bg-white/20 rounded-lg transition-all text-sm font-medium"
-                    whileHover={{ scale: 1.02 }}
-                  >
-                    View Result
-                    <ExternalLink className="w-4 h-4" />
-                  </motion.a>
+                  {edu.grade && (
+                    <motion.a
+                      href={edu.resultUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center mt-5 gap-2 px-6 py-2.5 bg-white/10 hover:bg-white/20 rounded-lg transition-all text-sm font-medium"
+                      whileHover={{ scale: 1.02 }}
+                    >
+                      View Result
+                      <ExternalLink className="w-4 h-4" />
+                    </motion.a>
+                  )}
                 </div>
               </div>
             </motion.div>

@@ -1,79 +1,99 @@
-import { motion } from "framer-motion";
+
 import {
   Briefcase,
   MapPin,
   Building2,
   ExternalLink,
   ArrowRight,
+  Calendar,
+  
 } from "lucide-react";
 import { ScrollAnimation } from "@/components/ScrollAnimation";
-import codeAlphaImg from "@/assets/experience/codeAlpha_page.jpg";
-import bharatInternImg from "@/assets/experience/bharatIntern_page.jpg";
-import codeClauseImg from "@/assets/experience/codeClause_page.jpg";
-import oasisInfobyteImg from "@/assets/experience/oasisInfobyte_page.jpg";
 import codeAlphaPdf from "@/assets/files/experience_pdf/codeAlpha.pdf";
 import bharatInternPdf from "@/assets/files/experience_pdf/bharatIntern.pdf";
 import codeClausePdf from "@/assets/files/experience_pdf/codeClause.pdf";
-import oasisInfobytePdf from "@/assets/files/experience_pdf/oasisInfobyte.pdf";
 
 const experiences = [
   {
-    title: "Software Engineering Intern",
-    company: "Code Alpha",
-    location: "Remote",
-    period: "Jun 2024 - Aug 2024",
-    type: "Internship",
-    image: codeAlphaImg,
-    certificateUrl: codeAlphaPdf,
+    title: "Frontend Developer & UI/UX Engineer",
+    company: "Sekal AS",
+    location: "Stavanger, Norway",
+    period: "07.2022-Present",
+    portfolioUrl: codeAlphaPdf,
+    technologies: [
+      "React.js",
+      "TypeScript",
+      "Python",
+      "REST APIs",
+      "Jest",
+      "Playwright",
+      "CI/CD",
+      "Agile",
+      "Figma"
+    ],
     description: [
-      "Optimized web application performance with JavaScript and React.js, achieving a 98% error-free rate",
-      "Implemented advanced features on a React.js platform, resulting in a 40% surge in user interaction",
+      "Developed scalable React + TypeScript applications for real-time, data-intensive offshore systems.",
+      "Built high-performance UI components for complex, real-time data visualization.",
+      "Developed a high-performance Python dashboard to visualize KPIs and operational statistics, aggregating processed data from several oil and gas rigs into a single unified interface.",
+      "Implemented automated testing using Jest and Playwright to improve reliability and maintainability.",
+      "Integrated REST APIs to enable seamless, real-time user experiences.",
+      "Collaborated cross-functionally in Agile teams to deliver production-ready features.",
+      "Contributed to CI/CD pipelines and the evolution of scalable frontend architecture.",
+      "Designed intuitive, responsive interfaces in Figma with a strong focus on user experience."
     ],
   },
   {
-    title: "Full Stack Development Intern",
-    company: "Bharat Intern",
-    location: "Remote",
-    period: "Jun 2024 - Jul 2024",
-    type: "Internship",
-    image: bharatInternImg,
-    certificateUrl: bharatInternPdf,
-    description: [
-      "Designed 3 websites with CSS, JavaScript, React.js, Node.js and MongoDB, resulting in a 30% increase in user engagement",
-      "Built a money tracker app using HTML, CSS, React.js, Node.js, and MongoDB, improving user financial tracking by 25%",
+    title: "Frontend Developer & UI/UX Engineer",
+    company: "IT ASIA",
+    location: "Tehran, Iran ",
+    period: "11.2017-07.2021",
+    portfolioUrl: bharatInternPdf,
+    technologies: [
+      "JavaScript",
+      "Angular",
+      "PHP",
+      "Laravel",
+      "HTML",
+      "CSS",
+      "WordPress",
+      "Adobe XD",
+      "Git"
     ],
+    description: [
+      "Developed responsive web applications and e-commerce platforms using JavaScript, Angular, HTML, and CSS, with a strong focus on performance, user experience, and SEO.",
+      "Translated modern UI/UX designs from Adobe XD into responsive, cross-device user interfaces.",
+      "Collaborated with backend developers to integrate PHP/Laravel APIs and support database operations using SQL.",
+      "Maintained and customized WordPress websites while managing version control with Git."
+    ]
   },
   {
-    title: "Web Applications Intern",
-    company: "CodeClause",
-    location: "Remote",
-    period: "Jun 2023 - Jul 2023",
-    type: "Internship",
-    image: codeClauseImg,
-    certificateUrl: codeClausePdf,
-    description: [
-      "Engineered a real-time collaborative document editor using Next.js, TypeScript, and Liveblocks, reducing latency by 30%",
-      "Implemented and optimized a personal portfolio with Next.js and Tailwind CSS, improving performance by 40%",
+    title: "Frontend Developer",
+    company: "Manzoomeh Negaran",
+    location: "Tehran, Iran",
+    period: "08.2015 - 11.2017",
+    portfolioUrl: codeClausePdf,
+    technologies: [
+      "jQuery",
+      "HTML",
+      "CSS",
+      "SQL",
+      "Basis Core",
+      "SEO"
     ],
-  },
-  {
-    title: "Junior Web Developer",
-    company: "Oasis Infobyte",
-    location: "Remote",
-    period: "Jun 2023 - Jul 2023",
-    type: "Internship",
-    image: oasisInfobyteImg,
-    certificateUrl: oasisInfobytePdf,
     description: [
-      "Engineered a real-time collaborative document editor using Next.js, TypeScript, and Liveblocks, reducing latency by 30%",
-      "Implemented and optimized a personal portfolio with Next.js and Tailwind CSS, improving performance by 40%",
-    ],
+      "Designed and delivered 15+ high-quality websites, improving usability and overall performance.",
+      "Built responsive, pixel-perfect user interfaces from Photoshop designs using HTML and CSS.",
+      "Developed custom web solutions using the Basis Core Platform to meet specific business requirements.",
+      "Created database-driven web pages and worked with SQL-based systems.",
+      "Wrote clean, reusable, and standards-compliant frontend code."
+    ]
   },
+
 ];
 
 const Experience = () => {
   return (
-    <div className="min-h-screen pt-16 sm:pt-20 px-4 max-w-5xl mx-auto pb-16 sm:pb-20">
+    <div className="min-h-screen pt-16 sm:pt-20 px-4 max-w-5xl mx-auto">
       <ScrollAnimation>
         <h2 className="text-3xl sm:text-4xl font-bold mb-8 sm:mb-12 gradient-text flex items-center gap-3">
           <Briefcase className="w-7 h-7 sm:w-8 sm:h-8" />
@@ -85,9 +105,14 @@ const Experience = () => {
         {experiences.map((exp) => (
           <ScrollAnimation key={exp.title}>
             <div className="group relative bg-gray-800/50 rounded-xl sm:rounded-2xl overflow-hidden backdrop-blur-sm hover:bg-gray-800/70 transition-all border border-white/5">
-              <div className="grid grid-cols-1 md:grid-cols-[1fr,300px]">
+              <div className="grid grid-cols-1 md:grid-cols-[1fr]">
                 <div className="p-6 sm:p-8">
-                  <div className="flex items-center gap-3 mb-4 sm:mb-6">
+
+                   <div className="absolute top-0 right-0 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-bl-xl flex items-center gap-2">
+                <Calendar className="w-4 h-4 text-gray-300" />
+                <span className="text-gray-300">{exp.period}</span>
+              </div>
+                  <div className="flex items-center gap-3  sm:mb-1">
                     <div className="p-2 sm:p-3 bg-white/10 rounded-lg sm:rounded-xl group-hover:bg-white/20 transition-colors">
                       <Building2 className="w-6 h-6 sm:w-7 sm:h-7" />
                     </div>
@@ -101,12 +126,21 @@ const Experience = () => {
                     </div>
                   </div>
 
-                  <div className="flex flex-wrap items-center gap-2 text-gray-300 mb-4 sm:mb-6 text-sm sm:text-base">
+                  <div className="flex flex-wrap items-center gap-1 text-gray-300 mb-2 sm:mb2 text-sm sm:text-base">
                     <MapPin className="w-4 h-4" />
                     <span>{exp.location}</span>
-                    <span>•</span>
-                    <span>{exp.period}</span>
                   </div>
+
+                  <ul className="flex flex-wrap gap-2 mb-6">
+                    {exp.technologies.map((item, i) => (
+                      <li
+                        key={i}
+                        className="px-3 py-1 text-sm  text-gray-300 bg-[#4b587c] rounded-lg w-fit"
+                      >
+                        <span className="leading-relaxed">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
 
                   <ul className="space-y-3 sm:space-y-4">
                     {exp.description.map((item, i) => (
@@ -119,43 +153,22 @@ const Experience = () => {
                       </li>
                     ))}
                   </ul>
-
-                  <motion.a
-                    href={exp.certificateUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="md:hidden mt-6 inline-flex items-center gap-2 px-6 py-2.5 text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-lg transition-all duration-300 text-sm font-medium"
-                    whileHover={{ scale: 1.02 }}
-                  >
-                    View Certificate
-                    <ExternalLink className="w-4 h-4" />
-                  </motion.a>
                 </div>
-
-                <div className="relative hidden md:block">
-                  <div className="absolute inset-0 group-hover:scale-105 transition-transform duration-500">
-                    <img
-                      src={exp.image}
-                      alt={exp.company}
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-r from-gray-800/80 to-transparent" />
-                  </div>
-                  <div className="relative h-full flex items-center justify-center">
-                    <motion.a
+                  <div className="relative h-full flex border-t border-white/10 py-3">
+                    <a
                       href={exp.certificateUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="px-8 py-3 text-white font-bold bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-xl flex items-center gap-2 transition-all duration-300 hover:scale-105 border border-white/10 hover:border-white/20"
+                      className="px-8 py-3 text-orange-200 rounded-xl flex items-center gap-2 "
                       whileHover={{ y: -5 }}
                     >
-                      View Certificate
+                      View Portfolio
                       <ExternalLink className="w-4 h-4" />
-                    </motion.a>
+                    </a>
                   </div>
                 </div>
               </div>
-            </div>
+           
           </ScrollAnimation>
         ))}
       </div>
