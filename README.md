@@ -32,25 +32,6 @@ A modern, fully responsive personal portfolio built with React + Vite and Tailwi
 
 </div>
 
----
-
-## Tech Stack
-
-<div align="center">
-
-| Technologies      |
-| ----------------- | ---------------------------------------------- |
-| **Frontend**      | React, TypeScript, Vite, Tailwind CSS          |
-| **UI/UX Design**  | Figma, Adobe XD                                |
-| **State & Data**  | REST APIs, Axios                               |
-| **Testing**       | Jest, Playwright                               |
-| **CI/CD & Cloud** | Azure DevOps (CI/CD), Cloud-based applications |
-| **Tools**         | Git, GitHub, VS Code, Postman                  |
-
-</div>
-
----
-
 ## Project Structure
 
 ```
