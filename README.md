@@ -1,6 +1,6 @@
 <div align="center">
 
-# Yasaman Farsian — Portfolio 🚀
+# Yasaman Farsian
 
 <h3>Front-end Web Developer · Stavanger, Norway</h3>
 
@@ -37,9 +37,6 @@ A modern, fully responsive personal portfolio built with React + Vite and Tailwi
 ```
 ├── public/
 │   ├── favicon.png
-│   ├── manifest.json
-│   ├── robots.txt
-│   └── sitemap.xml
 └── src/
     ├── assets/
     ├── components/
