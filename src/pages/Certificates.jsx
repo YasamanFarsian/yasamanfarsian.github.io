@@ -1,20 +1,18 @@
-import { motion } from "framer-motion";
-import { Award, Calendar, ExternalLink } from "lucide-react";
-import { ScrollAnimation } from "@/components/ScrollAnimation";
-import typescriptPdf from "@/assets/files/certificates_pdf/TypeScript.pdf";
-import awsEcsPdf from "@/assets/files/certificates_pdf/aws_ecs.pdf";
 import cloudComputingPdf from "@/assets/files/certificates_pdf/cloudComputingPdf.pdf";
-import costManagementPdf from "@/assets/files/certificates_pdf/costManagementPdf.pdf";
 import copilotPdf from "@/assets/files/certificates_pdf/copilotPdf.pdf";
 import CorearchitecturalPdf from "@/assets/files/certificates_pdf/CorearchitecturalPdf.pdf";
-
+import costManagementPdf from "@/assets/files/certificates_pdf/costManagementPdf.pdf";
+import { ScrollAnimation } from "@/components/ScrollAnimation";
+import { motion } from "framer-motion";
+import { Award, Calendar, ExternalLink } from "lucide-react";
 
 const certificates = [
   {
-    title: "MCTS: Sql server ,Database Development ( Design and Implementation)",
+    title:
+      "MCTS: Sql server ,Database Development ( Design and Implementation)",
     issuer: "Sematec",
     date: "September 2017",
-    link: typescriptPdf,
+    link: "#",
     description:
       "Demonstrated expertise in database design, development, and implementation using Microsoft SQL Server.",
     skills: [
@@ -24,19 +22,16 @@ const certificates = [
       "stored procedures",
       "query optimization",
     ],
-
   },
   {
     title: "ReactJs",
     issuer: "Sematec",
     date: "March 2026",
-    link: awsEcsPdf,
+    link: "#",
     description:
       "In-depth course covering modern React, including hooks, state management, component architecture, and real-world application development.",
-    skills: ["React", "Hooks", "Redux", "React Router", "Next.js"]
+    skills: ["React", "Hooks", "Redux", "React Router", "Next.js"],
   },
- 
-
 ];
 
 const badges = [
@@ -45,31 +40,33 @@ const badges = [
     issuer: "Microsoft",
     date: "14th October 2025",
     link: cloudComputingPdf,
-    description: 'Introduction to cloud computing, cloud concepts, deployment models, and understanding shared responsibility in the cloud.'
+    description:
+      "Introduction to cloud computing, cloud concepts, deployment models, and understanding shared responsibility in the cloud.",
   },
   {
     title: "Cost management in Azure",
     issuer: "Microsoft",
     date: "24th October 2025",
     link: costManagementPdf,
-    description: 'Describe microsoft Cost Management tool, cost optimization options, including Reservations, savings plans, and spot pricing.'
+    description:
+      "Describe microsoft Cost Management tool, cost optimization options, including Reservations, savings plans, and spot pricing.",
   },
   {
     title: "Microsoft Copilot",
     issuer: "Microsoft",
     date: "6th November 2025",
     link: copilotPdf,
-    description: 'Critically assess the main functions and benefits of Copilot at enhancing productivity and creativity.'
+    description:
+      "Critically assess the main functions and benefits of Copilot at enhancing productivity and creativity.",
   },
   {
     title: "Core architectural components of Azure",
     issuer: "Microsoft",
     date: "13th November 2025",
     link: CorearchitecturalPdf,
-    description: 'Describe Azure regions, region pairs, datacenters and hierarchy of resource groups, subscriptions, and management groups.'
+    description:
+      "Describe Azure regions, region pairs, datacenters and hierarchy of resource groups, subscriptions, and management groups.",
   },
- 
-
 ];
 
 const Certificates = () => {
@@ -105,7 +102,9 @@ const Certificates = () => {
                     <span>{cert.date}</span>
                   </div>
                 </div>
-                <p className="text-gray-300 line-clamp-2 mb-6 mt-3">{cert.description}</p>
+                <p className="text-gray-300 line-clamp-2 mb-6 mt-3">
+                  {cert.description}
+                </p>
                 <div className="flex flex-wrap gap-2">
                   {cert.skills.map((skill) => (
                     <span
@@ -131,10 +130,7 @@ const Certificates = () => {
         ))}
       </div>
 
-
-
-
-       <ScrollAnimation>
+      <ScrollAnimation>
         <motion.div
           className="flex items-center gap-3 mb-8 mt-14"
           initial={{ opacity: 0, x: -20 }}
@@ -165,7 +161,7 @@ const Certificates = () => {
                   </div>
                 </div>
                 <p className="text-gray-300 line-clamp-2">{cert.description}</p>
-               
+
                 <motion.a
                   href={cert.link}
                   target="_blank"

@@ -1,37 +1,34 @@
-import { motion } from "framer-motion";
-import {
-  Github,
-  Linkedin,
-  MessageCircle,
-  Code2,
-  PencilRuler
-} from "lucide-react";
-import { useState } from "react";
 import cvPdf from "@/assets/files/cv_pdf/YasamanFarsian-CV.pdf";
 import profileImg from "@/assets/profile/profile.jpg";
 import { ScrollAnimation } from "@/components/ScrollAnimation";
+import { motion } from "framer-motion";
+import {
+  Code2,
+  Github,
+  Linkedin,
+  MessageCircle,
+  PencilRuler,
+} from "lucide-react";
 import Skills from "./Skills";
 
-
 const Home = () => {
-  const [copied, setCopied] = useState(false);
   const whatsappNumber = "+4796715675";
-
 
   const achievements = [
     {
       icon: <Code2 className="w-6 h-6" />,
       title: "Frontend Development",
-      description: "Explore scalable web applications built with React, TypeScript, and modern frontend technologies.",
-      link:'/projects'
+      description:
+        "Explore scalable web applications built with React, TypeScript, and modern frontend technologies.",
+      link: "/projects",
     },
     {
       icon: <PencilRuler className="w-6 h-6" />,
       title: "UI/UX Design",
-      description: "View user-centered designs and interactive prototypes created in Figma for real-world applications.",
-      link:'/portfolios'
+      description:
+        "View user-centered designs and interactive prototypes created in Figma for real-world applications.",
+      link: "/portfolios",
     },
-
   ];
 
   return (
@@ -47,7 +44,7 @@ const Home = () => {
           </div>
         </ScrollAnimation>
 
-        <ScrollAnimation className='mt-6 pt-7'>
+        <ScrollAnimation className="mt-6 pt-7">
           <motion.h1
             className="text-2xl sm:text-2xl md:text-4xl font-bold mb-4 sm:mb-6 relative tracking-tighter"
             initial={{ opacity: 0, y: 20 }}
@@ -68,7 +65,16 @@ const Home = () => {
 
           <div className="space-y-4">
             <p className="text-gray-300 leading-relaxed text-justify">
-              Frontend Engineer with 6+ years of experience specializing in real-time, data-intensive web applications using React and TypeScript. Over the last 4 years, I have built cloud-based platforms for offshore drilling operations, developing high-performance dashboards that visualize complex data and support critical decision-making. I combine strong frontend engineering with UI/UX design, creating intuitive, scalable interfaces from Figma to production. Experienced in performance optimization, testing, CI/CD, and collaborating in Agile, cross-functional teams.
+              Frontend Engineer with 6+ years of experience specializing in
+              real-time, data-intensive web applications using React and
+              TypeScript. Over the last 4 years, I have built cloud-based
+              platforms for offshore drilling operations, developing
+              high-performance dashboards that visualize complex data and
+              support critical decision-making. I combine strong frontend
+              engineering with UI/UX design, creating intuitive, scalable
+              interfaces from Figma to production. Experienced in performance
+              optimization, testing, CI/CD, and collaborating in Agile,
+              cross-functional teams.
             </p>
           </div>
 
@@ -122,53 +128,40 @@ const Home = () => {
               </a>
             </div>
           </div>
-
         </ScrollAnimation>
       </div>
-
 
       <div className="text-center relative z-10 max-w-7xl mx-auto">
         <ScrollAnimation>
           <div className="mt-16">
-            <h2 className="text-4xl font-bold mb-4 gradient-text">
-              Portfolio
-            </h2>
+            <h2 className="text-4xl font-bold mb-4 gradient-text">Portfolio</h2>
             <div className="grid md:grid-cols-2 gap-6 mt-16">
               {achievements.map((achievement) => (
                 <a href={achievement.link}>
+                  <div className="bg-white/5 p-6 py-6 rounded-xl backdrop-blur-sm text-center flex flex-col items-center justify-center min-h-40">
+                    {/* Icon */}
+                    <div className="text-white mb-4 flex justify-center">
+                      {achievement.icon}
+                    </div>
 
-                <div className="bg-white/5 p-6 py-6 rounded-xl backdrop-blur-sm text-center flex flex-col items-center justify-center min-h-40">
+                    {/* Title */}
+                    <h4 className="text-xl font-semibold mb-2">
+                      {achievement.title}
+                    </h4>
 
-                  {/* Icon */}
-                  <div className="text-white mb-4 flex justify-center">
-                    {achievement.icon}
+                    {/* Description */}
+                    <p className="text-gray-400">{achievement.description}</p>
                   </div>
-
-                  {/* Title */}
-                  <h4 className="text-xl font-semibold mb-2">
-                    {achievement.title}
-                  </h4>
-
-                  {/* Description */}
-                  <p className="text-gray-400">
-                    {achievement.description}
-                  </p>
-
-                </div>
                 </a>
-
               ))}
             </div>
           </div>
         </ScrollAnimation>
 
-
         <ScrollAnimation>
           <Skills />
         </ScrollAnimation>
-
       </div>
-
     </div>
   );
 };

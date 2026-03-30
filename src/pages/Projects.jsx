@@ -1,9 +1,8 @@
-import { ExternalLink } from "lucide-react";
-import { ScrollAnimation } from "@/components/ScrollAnimation";
 import project1 from "@/assets/projects_img/DT-Dashboard.png";
 import project2 from "@/assets/projects_img/Drillability.png";
 import project3 from "@/assets/projects_img/autonomous.png";
-import project4 from "@/assets/projects_img/project-4.png";
+import { ScrollAnimation } from "@/components/ScrollAnimation";
+import { ExternalLink } from "lucide-react";
 
 const projects = [
   {
@@ -11,7 +10,7 @@ const projects = [
     description:
       "A real-time drilling monitoring and optimization platform and digital twin–based advisory system for drilling.",
     image: project1,
-    prototype: "https://spam-detector1.vercel.app",
+    prototype: "",
     tags: [
       "React.js",
       "TypeScript",
@@ -21,7 +20,7 @@ const projects = [
       "Playwright",
       "CI/CD",
       "Agile",
-      "Figma"
+      "Figma",
     ],
   },
   {
@@ -29,7 +28,7 @@ const projects = [
     description:
       "A modern Book Management System built with the MERN stack (React 19 & Tailwind 4.0). Features secure JWT authentication, protected routes, and full CRUD functionality.",
     image: project2,
-    prototype: "https://curd-auth-app.vercel.app",
+    prototype: "",
     tags: [
       "MongoDB",
       "Express",
@@ -49,32 +48,19 @@ const projects = [
     prototype: "",
     tags: ["Linux", "Bash", "Networking", "Monitoring", "NMAP", "Scripting"],
   },
-  {
-    title: "Student Portfolio",
-    description:
-      "A professional portfolio template for engineering students. Easy to set up, fully customizable, and perfect for showcasing projects and skills.",
-    image: project1,
-    prototype: "https://techfolio1.vercel.app",
-    tags: ["Next", "Tailwind CSS", "TypeScript", "ThreeJS", "Responsive"],
-  },
 ];
-
 
 const Projects = () => {
   return (
     <div className="min-h-screen pt-20 mt-5 px-4 max-w-6xl mx-auto pb-5">
       <ScrollAnimation>
-        <h2 className="text-4xl font-bold mb-12 gradient-text">
-          Projects
-        </h2>
+        <h2 className="text-4xl font-bold mb-12 gradient-text">Projects</h2>
       </ScrollAnimation>
 
       <div className="grid gap-8 md:grid-cols-2">
-
         {projects.map((project) => (
           <ScrollAnimation key={project.title}>
             <div className="bg-gray-800/50 rounded-lg overflow-hidden backdrop-blur-sm h-full flex flex-col">
-
               <div className="p-6 flex flex-col flex-grow">
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-gray-400 mb-2 flex-grow">

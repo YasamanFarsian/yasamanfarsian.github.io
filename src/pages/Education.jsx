@@ -1,35 +1,39 @@
-import { motion } from 'framer-motion'
-import { GraduationCap, Calendar, MapPin, BookOpen, Award, FileText, ExternalLink } from 'lucide-react'
-import { ScrollAnimation } from '@/components/ScrollAnimation'
-import bTechPdf from '@/assets/files/education_pdf/B Tech.pdf'
+import { ScrollAnimation } from "@/components/ScrollAnimation";
+import { motion } from "framer-motion";
+import {
+  Award,
+  BookOpen,
+  Calendar,
+  ExternalLink,
+  FileText,
+  GraduationCap,
+  MapPin,
+} from "lucide-react";
 
 const Education = () => {
   const educationData = [
     {
-      university: 'University of Stavanger (UIS), Stavanger, Norway',
-      duration: '8-2021 - Paused',
-      degree: 'Master of Science, Computer Science, M.Sc.',
-      resultUrl: bTechPdf,
-      description:
-        'paused to pursue professional career ',
+      university: "University of Stavanger (UIS), Stavanger, Norway",
+      duration: "8-2021 - Paused",
+      degree: "Master of Science, Computer Science, M.Sc.",
+      resultUrl: "",
+      description: "paused to pursue professional career ",
     },
     {
-      university: 'Azad University Tehran South (IAU), Iran',
-      duration: '09.2017 - 09-2020',
-      degree: 'Master of Science, Information Technology, M.Sc.',
-      grade: 'Graduated with honors, GPA 4.0 out of 5',
-      resultUrl: bTechPdf,
-
+      university: "Azad University Tehran South (IAU), Iran",
+      duration: "09.2017 - 09-2020",
+      degree: "Master of Science, Information Technology, M.Sc.",
+      grade: "Graduated with honors, GPA 4.0 out of 5",
+      resultUrl: "",
     },
     {
-      university: 'Azad University of Karaj (KIAU), Iran',
-      duration: '09.2011 - 09-2014',
-      degree: 'Bachelor of Science, Software Engineering, B.Sc.',
-      grade: 'Graduated with honors, GPA 4.0 out of 5',
-      resultUrl: bTechPdf,
-
+      university: "Azad University of Karaj (KIAU), Iran",
+      duration: "09.2011 - 09-2014",
+      degree: "Bachelor of Science, Software Engineering, B.Sc.",
+      grade: "Graduated with honors, GPA 4.0 out of 5",
+      resultUrl: "",
     },
-  ]
+  ];
 
   return (
     <div className="min-h-screen pt-20 px-4 max-w-6xl mx-auto">
@@ -60,8 +64,6 @@ const Education = () => {
               </div>
 
               <div className="grid md:grid-cols-[1fr]">
-
-
                 <div className="p-6">
                   <div className="flex items-center gap-2 mb-4">
                     <BookOpen className="w-5 h-5 text-gray-400" />
@@ -70,7 +72,9 @@ const Education = () => {
 
                   <div className="flex items-center gap-2 text-gray-300 mb-3">
                     <MapPin className="w-4 h-4" />
-                    <span className="text- font-semibold">{edu.university}</span>
+                    <span className="text- font-semibold">
+                      {edu.university}
+                    </span>
                   </div>
 
                   {edu.grade && (
@@ -79,7 +83,6 @@ const Education = () => {
                       <span>{edu.grade}</span>
                     </div>
                   )}
-
 
                   {edu.description && (
                     <div className="flex items-start gap-2 text-gray-300 mb-6">
@@ -107,7 +110,7 @@ const Education = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Education
+export default Education;
