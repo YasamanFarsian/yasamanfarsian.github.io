@@ -1,21 +1,36 @@
 import portfolio2 from "@/assets/projects_img/portfolio/DashboardZoom.jpg";
 import portfolio1 from "@/assets/projects_img/portfolio/Driller-view.png";
-import portfolio4 from "@/assets/projects_img/portfolio/Simulator Dashboard - dark.jpg";
-import portfolio3 from "@/assets/projects_img/portfolio/Simulator Dashboard - light.png";
+import portfolio4 from "@/assets/projects_img/portfolio/SimulatorLight - V02- left monitor.png";
+import portfolio5 from "@/assets/projects_img/portfolio/DrillingWidget.png";
+import portfolio6 from "@/assets/projects_img/portfolio/DT-Dashboard.png";
+import portfolio7 from "@/assets/projects_img/portfolio/sample7.png";
+import portfolio8 from "@/assets/projects_img/portfolio/sample8.png";
 
 import { ScrollAnimation } from "@/components/ScrollAnimation";
 import { ExternalLink } from "lucide-react";
 
 const portfolio = [
   {
+    title: "Drilling Widgets",
+    image: [portfolio5],
+    figmaLink: "https://www.figma.com/proto/O6ca2Dl7hpfM3AbkTelF2Z/Untitled?node-id=0-1&t=5s7qtwOHNGX1dkqu-1",
+  },
+ 
+  {
+    title: "Simulator Drilling Dashboard Designs",
+    image: [portfolio6, portfolio4],
+    figmaLink: "https://www.figma.com/proto/BNzZjjufMoyw4RXuqrP0jL/Untitled?node-id=1-2761&t=oiiZ8ionKk3CYLxY-1",
+  },
+  
+   {
     title: "Drilling Automation Dashboard Designs",
     image: [portfolio1, portfolio2],
     figmaLink: "https://spam-detector1.vercel.app",
   },
   {
-    title: "Simulator Drilling Dashboard Designs",
-    image: [portfolio4, portfolio3],
-    figmaLink: "https://spam-detector1.vercel.app",
+    title: "Other Designs",
+    image: [portfolio7, portfolio8],
+    figmaLink: "#",
   },
 ];
 
