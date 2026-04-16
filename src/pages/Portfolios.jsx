@@ -15,22 +15,22 @@ const portfolio = [
     image: [portfolio5],
     figmaLink: "https://www.figma.com/proto/O6ca2Dl7hpfM3AbkTelF2Z/Untitled?node-id=0-1&t=5s7qtwOHNGX1dkqu-1",
   },
- 
+
   {
     title: "Simulator Drilling Dashboard Designs",
     image: [portfolio6, portfolio4],
-    figmaLink: "https://www.figma.com/proto/BNzZjjufMoyw4RXuqrP0jL/Untitled?node-id=1-2761&t=oiiZ8ionKk3CYLxY-1",
+    figmaLink: "https://www.figma.com/design/BNzZjjufMoyw4RXuqrP0jL/Untitled?node-id=0-1&t=Or99jJl1KrIou0Me-1",
   },
-  
-   {
+
+  {
     title: "Drilling Automation Dashboard Designs",
     image: [portfolio1, portfolio2],
-    figmaLink: "https://spam-detector1.vercel.app",
+    figmaLink: "https://www.figma.com/proto/7FBtzHDQ6uOzu5pwvAUcWa/Yasaman-Farsian---Portfolio--Copy-?node-id=2-5&t=L43WTkrbHjLFUTLJ-1",
   },
   {
     title: "Other Designs",
     image: [portfolio7, portfolio8],
-    figmaLink: "#",
+
   },
 ];
 
@@ -51,16 +51,18 @@ const Portfolios = () => {
                 <h3 className="text-xl font-semibold mb-2">
                   {portfolio.title}
                 </h3>
+                {portfolio.figmaLink && (
+  <a
+    href={portfolio.figmaLink}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center space-x-1 text-white hover:text-white transition-colors bg-[#5f8ecb] px-5 py-3 rounded-lg"
+  >
+    <ExternalLink className="w-4 h-4" />
+    <span>View in Figma</span>
+  </a>
+)}
 
-                <a
-                  href={portfolio.figmaLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-1 text-white hover:text-white transition-colors bg-[#5f8ecb] px-5 py-3 rounded-lg"
-                >
-                  <ExternalLink className="w-4 h-4" />
-                  <span>View in Figma</span>
-                </a>
               </div>
               {portfolio.image.map((img, i) => (
                 <div key={i} className="w-full mb-8">
